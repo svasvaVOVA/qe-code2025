@@ -1,0 +1,75 @@
+.container {
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+	padding: 130px;
+}
+
+.qrWrapper svg path:last-child {
+    fill: black;
+}
+
+.input {
+    margin-top: 30px;
+    border-radius: 5px;
+    border: .5px solid black;
+    color: rgb(15, 15, 15);
+    width: 400px;
+    height: 50px;
+    padding: 8px 16px;
+    font-size: 32px;
+}
+/* 
+.button {
+    border: none;
+    background: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 16px;
+    padding: 8px 16px;
+} */
+
+
+
+
+.button {
+	display: inline-flex;
+	border: none;
+	padding: 10px 26px;
+	background: linear-gradient(180deg, #7A0098 0%, #49008D 100%);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	border-radius: 50px;
+	font-size: 20px;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.3s ease 0s;
+	cursor: pointer;
+	box-shadow: 0 5px 0px rgba(15, 14, 14, 0.3);
+	transition: 0.2s;
+ }
+ 
+ .button:hover {
+	background: linear-gradient(180deg, #49008D 0%, #49008D 100%);
+ }
+ 
+ .button:active {
+	transform: translateY(3px);
+	box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+ }
+ 
+ @media (any-hover: hover) {
+	.button:hover {
+	  background: linear-gradient(180deg, #49008D 0%, #49008D 100%);
+	}
+ }
+ 
+ @media (any-hover: hover) {
+	.button:active {
+	  transform: translateY(3px);
+	  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+	}
+ }
+ 
